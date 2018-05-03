@@ -13,7 +13,6 @@ if ver is not None:
     file = open(FILELOC+"/VERSION", 'w')
     file.write(ver)
     file.close()
-    print(ver)
-    
+
 else:
     print("No Version Number.")
