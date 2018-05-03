@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures CentOS'
 long_description 'Installs/Configures CentOS'
-version '0.1.0'
+version IO.read(File.join(File.dirname(__FILE__), 'VERSION'))
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
