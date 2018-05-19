@@ -11,6 +11,8 @@ with open(file, "r") as jsonFile:
 
 tmp = data["default_attributes"]["IPS_Sites"][buildsite.upper()]["BUILD"]
 
+print(data)
+
 data["default_attributes"]["IPS_Sites"][buildsite.upper()]["BUILD"] = buildnum
 
 with open(file, "w") as jsonFile:
